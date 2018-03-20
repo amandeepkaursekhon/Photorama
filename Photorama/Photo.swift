@@ -1,10 +1,4 @@
-//
-//  Photo.swift
-//  Photorama
-//
-//  Created by Amandeep Sekhon on 2018-03-12.
-//  Copyright © 2018 Centennial College. All rights reserved.
-//
+// Authors Name :- Amandeep kaur Sekhon id - (300976886) , Mankiran Kaur id :- (300990016)
 
 import Foundation
 
@@ -24,4 +18,11 @@ class Photo
         
     }
     
+    
+    
+}
+extension Photo: Equatable{
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return lhs.photoID == rhs.photoID
+}
 }
